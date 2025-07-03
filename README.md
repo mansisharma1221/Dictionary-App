@@ -4,7 +4,7 @@ A modern, stylish and responsive English dictionary web app built with **HTML**,
 Search any English word and get its pronunciation, meaning, part of speech, synonyms, antonyms, and example usage.
 
 ## 🔗 Live Demo  
-👉 [Click here to try it out](https://mansisharma1221.github.io/Dictionary-App/) 🚀
+👉 [Click here to try it out] (https://mansisharma1221.github.io/Dictionary-App/) 🚀
 
 ## ✨ Features
 - 🔍 Real-time word search using [Free Dictionary API] (https://dictionaryapi.dev/)
