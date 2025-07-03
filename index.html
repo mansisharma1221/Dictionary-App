@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dictionary App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather&family=Roboto+Mono&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Dictionary <span class="emoji">📚</span></h1>
+
+    <div class="top-controls">
+      <div class="font-selector">
+        <label for="fontSelect">Font:</label>
+        <select id="fontSelect">
+          <option value="Inter">Sans-serif</option>
+          <option value="Merriweather">Serif</option>
+          <option value="Roboto Mono">Monospace</option>
+        </select>
+      </div>
+
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider"></span>
+        </label>
+        <span id="modeLabel">Light Mode</span>
+      </div>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="wordInput" placeholder="e.g. adventure, logic, sun..." autofocus />
+      <button id="searchBtn">🔍</button>
+    </div>
+
+    <div class="history" id="historyContainer"></div>
+
+    <!-- 🆕 Suggestions and Extras -->
+    <div class="suggestions">
+      <h3>💡 Try searching:</h3>
+      <p class="tags">freedom, galaxy, chaos, emotion, virtual</p>
+    </div>
+
+    <div class="quote">
+      <q>Words are, in my not-so-humble opinion, our most inexhaustible source of magic.</q>
+      <p>– Albus Dumbledore</p>
+    </div>
+
+    <div class="tip">
+      💬 Tip: Click on recent words to view their meaning instantly!
+    </div>
+
+    <!-- Loader and Result -->
+    <div id="loader" class="loader hidden"></div>
+    <div class="result-card animate" id="resultContainer"></div>
+  </div>
+
+  <footer>
+    🔗 Powered by <a href="https://dictionaryapi.dev/" target="_blank">Free Dictionary API</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
